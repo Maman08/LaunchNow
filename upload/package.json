@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev":"tsc -b && node dist/index.js"
+    "dev": "tsc -b && node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "@types/express": "^5.0.0",
     "aws-sdk": "^2.1692.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "redis": "^4.7.0",
     "simple-git": "^3.27.0"
