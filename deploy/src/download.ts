@@ -10,7 +10,7 @@ const s3 = new S3({
 // prefix --> output/asdasd
 export async function downloadS3Folder(prefix:any){
     const allFiles=await s3.listObjectsV2({
-        Bucket:"launchnow",
+        Bucket:"",
         Prefix:prefix
     }).promise();
     console.log("All the files : ",allFiles)
@@ -68,7 +68,7 @@ const uploadFile = async (fileName: any, localFilePath: any) => {
     const fileContent = fs.readFileSync(localFilePath);
     const response = await s3.upload({
         Body: fileContent,
-        Bucket: "launchnow",
+        Bucket: "",
         Key: fileName,
     }).promise();
     console.log(response);
