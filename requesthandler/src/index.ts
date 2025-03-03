@@ -11,7 +11,7 @@ app.get('/*',async(req,res)=>{
     console.log(id);const filePath = req.path;
 
     const contents = await s3.getObject({
-        Bucket: "launchnow",
+        Bucket: "",
         Key: `dist/${id}${filePath}`
     }).promise();
     
