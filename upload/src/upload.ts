@@ -12,7 +12,7 @@ export const upload = async (fileName: any, localFilePath: any) => {
     const fileContent = fs.readFileSync(localFilePath);
     const response = await s3.upload({
         Body: fileContent,
-        Bucket: "launchnow",
+        Bucket: "",
         Key: fileName,
     }).promise();
     console.log(response);
